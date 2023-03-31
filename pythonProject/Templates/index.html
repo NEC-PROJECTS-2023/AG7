@@ -1,0 +1,99 @@
+<html>
+<head>
+    <style>
+          body{
+<!--            background-image:linear-gradient(140deg,rgb(76, 31, 182) 60%,rgb(72, 72, 133) 50%,rgb(55, 55, 59) 50%);-->
+            background-image: url("https://365datascience.com/resources/blog/xapntiqieda-top-5-ds-use-in-marketing-customer-segmentation.png");
+            background-size: cover;
+            filter: blur(0.3px);
+            -webkit-filter: blur(0.3px);
+           }
+        .row-container{
+        display:flex;
+        }
+        .row-container > div{
+        margin-left:20px;
+        }
+        .col-container-1,.col-container-2,.col-container-3{
+        display:flex;
+        flex-direction:column;
+        }
+        .col-container-2 > div{
+         font-size:25px;
+        margin-bottom:45px;
+        }
+        .col-container-3 > div{
+        font-size:25px;
+        margin-bottom:20px;
+        }
+        .col-container-1{
+        margin-left:400px;
+        margin-top:150px;
+        }
+        .button{
+        margin-left:200px;
+        margin-top:20px;
+        }
+        input[type=text]{
+          width: 100%;
+          padding: 12px 12px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        button{
+        background-color: #4CAF50; /* Green */
+          border: 2px solid #4CAF50;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius:24px;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .button {
+          transition-duration: 0.4s;
+        }
+        .button:hover {
+          background-color: #3e8e41
+          color: white;
+        }
+</style>
+</head>
+<body>
+<h1>Customer Segmentation</h1>
+    <form name="data" action="/" method="POST">
+     <div class="col-container-1">
+    <div class="row-container">
+        <div class="col-container-2">
+            <div><label>Gender</label></div>
+            <div><label for="age">Age</label></div>
+            <div><label for="aincome">Annual Income</label></div>
+            <div><label for="Spend">Spending Score</label></div>
+        </div>
+        <div class="col-container-3">
+            <div>
+             Male
+            <input type="radio" name="gender" value=0>
+            Female
+            <input type="radio" name="gender" value=1><br>
+            </div>
+            <div><input size=50 type="text" id="age" name="age" placeholder="Age"></div>
+
+            <div><input size=50 type="text" id="aincome" name="aincome" placeholder="Annual Income"></div>
+
+            <div><input size=50 type="text" id="spend" name="spend" placeholder="Spending Score(1-100)"></div>
+        </div>
+    </div>
+        <div>
+        <button class="button" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+<!--<div>-->
+<!--   <p>The customer is in cluster </p> {{a}}-->
+{{a}}
+<!--</div>-->
+</body>
+</html>
